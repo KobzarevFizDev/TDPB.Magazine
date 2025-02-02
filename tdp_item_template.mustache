@@ -1,0 +1,50 @@
+{{#tdp_item}}
+<div class="tdp-item row align-items-center p-3 border rounded shadow-sm bg-light">
+
+    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <video class="img-fluid rounded" autoplay loop muted>
+            <source class="tdp-preview" src="{{path_to_mp4}}" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="col-xs-6 col-sm-6 col-md-1 col-lg-1">
+        <div class="d-flex flex-column">
+            <div class="property text-muted small">Канал</div>
+            <div class="property-value font-weight-bold">{{channel}}A</div>
+        </div>
+    </div>
+
+    <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+        <div class="d-flex flex-column">
+            <div class="property text-muted small">Начало</div>
+            <div class="property-value font-weight-bold">{{start_time}}</div>
+        </div>
+    </div>
+
+    <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+        <div class="d-flex flex-column">
+            <div class="property text-muted small">Конец</div>
+            <div class="property-value font-weight-bold">{{finish_time}}</div>
+        </div>
+    </div>
+
+    <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+        <div class="d-flex flex-column">
+            <div class="property text-muted small">Длительность</div>
+            <div class="property-value font-weight-bold">{{duration}} Секунд</div>
+        </div>
+    </div>
+
+    <div class="col-xs-6 col-sm-6 col-md-1 col-lg-1">
+        <div class="d-flex flex-column">
+            <div class="property text-muted small">Кадров</div>
+            <div class="property-value font-weight-bold">{{frames_number}}</div>
+        </div>
+    </div>
+
+    <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+        <button class="btn btn-primary w-100">Скачать</button>
+    </div>
+
+</div>
+{{/tdp_item}}
